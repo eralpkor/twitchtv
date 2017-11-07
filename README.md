@@ -1,2 +1,3 @@
-# twitchtv
-This is a Twitch.TV JSON API project for FeeCodeCamp
+# twitch.tv JSON API
+
+This is a Twitch.TV JSON API project for FeeCodeCamp.org
