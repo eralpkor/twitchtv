@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Barcode+39+Text|Saira+Semi+Condensed');
+@import 'https://fonts.googleapis.com/css?family=Space+Mono';
+body{
+    background-color: rgb(101, 67, 159);
+    font-family: 'Saira Semi Condensed', sans-serif;
+}
+.container{
+    width: 800px;
+    margin: 0 auto;
+}
+.top {
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+a{
+    text-decoration: none;
+}
+a:link, a:visited {
+    color: black;
+    transition-delay: 0.5s; /* delays for 1 second */
+   -webkit-transition-delay: 0.5s; /* for Safari & Chrome */
+}
+a:hover {
+    color: black;
+}
+
+.preview{
+    margin: 10px auto;
+}
+h1{
+    color: whitesmoke;
+    text-align: center;
+}
+.online, .offline{
+    font-size: 3em;
+    font-family: 'Libre Barcode 39 Text', cursive;
+    max-width: 750px;
+    border-radius: 15px 50px;
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px black;
+    margin: 0 auto 25px auto;
+}
+.online:hover, .offline:hover{
+    transition: background-color 0.5s ease;
+    background-color: wheat;
+}
+.user-logo {
+    width: 115px;
+    border-radius: 10px 50px;
+}
+.online{
+    background-color: rgb(163, 247, 189);
+}
+.offline{
+    background-color: rgb(242, 118, 186);
+}
+.button-group{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.button-group > button{
+    transition: background-color 0.5s ease;
+    background-color: white;
+    border: none;
+    border-radius: 10px 50px;
+    height: 40px;
+    width: 200px;
+    margin: 15px 20px 20px 20px;
+    box-shadow: 1px 5px 0px black;
+    cursor: pointer;
+    font-size: 1.25em;
+    top: 0px;
+}
+button:focus{
+    outline: 0;
+}
+.button-group>button:hover{
+    background-color:  wheat;
+}
+.button-group>button:active{
+    box-shadow: 0px 1px 0px black;
+    top: 3px;
+}
+.btn{
+    transition: background-color 0.5s ease;
+    background-color: white;
+    border: none;
+    border-radius: 10px 50px;
+    height: 30px;
+    width: 300px;
+    margin: 15px 20px 20px 20px;
+    box-shadow: 1px 5px 0px black;
+    cursor: pointer;
+    font-size: 1.25em;
+    top: 0px;
+}
+.btn:focus{
+    outline: 0;
+}
+p{
+    font-family: 'Saira Semi Condensed', sans-serif;
+    font-size: 0.3em;
+}
+.twitch-info{
+    display: flex;
+    flex-direction: column;
+}
+@media(max-width: 800px){
+    .user-logo{
+        width: 70px;
+    }
+    h1{
+        font-size: 1.5em;
+    }
+    p{
+        font-size: .3em;
+    }
+    .container{
+        width: auto;
+    }
+    .button-group>button{
+        width: 100%;
+        margin: 0 auto 15px auto;
+        border-radius: 15px;
+    }
+    .online, .offline, .user-logo{
+        border-radius: 10px;
+    }
+    .end-note {
+        font-size: .2em !important;
+    }
+}
+@media(max-width: 425px){
+    .online, .offline{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+.end-note {
+   
+    bottom: 0;
+    text-align: center;
+    font-family: 'Space Mono', monospace;
+    font-size: 14px;
+    padding-top: 30px;
+    color: white;
+}
